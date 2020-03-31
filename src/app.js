@@ -102,7 +102,7 @@ function App() {
   return (
     <div className="container">
       <div className="section paper">
-        <h3>Profit</h3>
+        <h3>Профит</h3>
         <div className="costs-section">
           <Form onSubmit={onCostAdd} />
           <Table costs={costs} onDelete={onCostDelete} />
@@ -110,11 +110,11 @@ function App() {
       </div>
       <Header value={capital} onChange={onCapitalChange} />
       <div className="section paper">
-        <h3>Average rate of return</h3>
+        <h3>Средний показатель</h3>
         <span>{Math.round(coefficient * 1000) / 1000}</span>
       </div>
       <div className="section paper">
-        <h3>Actions</h3>
+        <h3>Експорт</h3>
         <button className="btn" onClick={exportToCsv}>
           Export To Csv
         </button>
